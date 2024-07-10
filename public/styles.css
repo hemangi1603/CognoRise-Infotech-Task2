@@ -1,0 +1,130 @@
+body, h1, form, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #76D7C4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-container {
+    flex: 1;
+    margin-right: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4596d0;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #4596d0;
+    
+}
+
+#task-count {
+    text-align: center;
+    margin: 20px 0;
+}
+
+ul#task-list {
+    width: 100%;
+}
+
+ul#task-list li {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul#task-list li .task-details {
+    display: flex;
+    flex-direction: column;
+}
+
+ul#task-list li .task-title {
+    font-weight: bold;
+}
+
+ul#task-list li .task-buttons {
+    display: flex;
+    align-items: center;
+}
+
+ul#task-list li .task-buttons button {
+    margin-left: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+}
+
+ul#task-list li .task-buttons button.edit {
+    color: white;
+    background-color: blue;
+}
+
+ul#task-list li .task-buttons button.delete {
+    color: white;
+    background-color: red;
+}
+
+ul#task-list li .complete-checkbox {
+    margin-right: 10px;
+}
+
+ul#task-list li.completed .task-title {
+    text-decoration: line-through;
+}
